@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edvise AI - Open UI</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        button {
+            background: #3a8dff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+        button:hover {
+            background: #00ffc7;
+            transform: scale(1.05);
+        }
+        .links {
+            margin-top: 30px;
+        }
+        .links a {
+            color: #00ffc7;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Edvise AI</h1>
+        <p>Smart Education Counselling Platform</p>
+        
+        <button onclick="openUI()">🚀 Open Edvise AI</button>
+        <button onclick="startServer()">⚡ Start Dev Server</button>
+        
+        <div class="links">
+            <h3>Quick Links:</h3>
+            <a href="http://localhost:3000" target="_blank">🏠 Home</a>
+            <a href="http://localhost:3000/counselling" target="_blank">💬 Counselling</a>
+            <a href="http://localhost:3000/browse" target="_blank">🔍 Browse</a>
+            <a href="http://localhost:3000/resume" target="_blank">📄 Resume</a>
+            <a href="http://localhost:3000/achievements" target="_blank">🏆 Achievements</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
+            Make sure to run "npm run dev" in the edvise-ai folder first!
+        </p>
+    </div>
+
+    <script>
+        function openUI() {
+            window.open('http://localhost:3000', '_blank');
+        }
+        
+        function startServer() {
+            alert('Run this command in terminal:\n\ncd "D:\\New folder\\SIH 2025\\edvise-ai" && npm run dev\n\nThen click "Open Edvise AI" button!');
+        }
+    </script>
+</body>
+</html>
